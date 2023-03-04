@@ -1,0 +1,58 @@
+@import '../../../../../dist/scss/root.scss';
+
+section {
+    display: flex;
+    flex-flow: column nowrap;
+
+    .logo {
+        margin-left: 13px;
+        color: $font-primary-color;
+    }
+
+    .logo > button {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo > button :hover {
+        background-color: #031018;
+    }
+
+    nav {
+        margin-bottom: 5px;
+    }
+    
+    button {  
+        background-color: $background-primary-color;
+    }
+
+    button:hover {
+        background-color: $button-hover-color;
+        transition: 100ms;
+    }
+
+    .btn-content, .bnt-selected{
+        width: 100%;
+
+        display:flex;
+        flex-flow: row nowrap;
+        gap: 15px;
+
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: $font-selected-color; 
+    }
+
+    .bnt-selected {
+        font-weight: 700;
+    }
+
+    app-tweet-button {
+        width: 100%;
+    }
+
+    fa-icon {
+        color: $font-selected-color !important;
+    }
+}

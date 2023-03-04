@@ -1,0 +1,14 @@
+@import '../../../../../dist/scss/root.scss';
+
+.nav-btn {
+    background-color: $button-primary-color;
+
+    color: #fff;
+    font-weight: bold;
+
+    width: 200px;
+}
+
+.nav-btn:hover {
+    background-color: $button-secundary-color;
+}

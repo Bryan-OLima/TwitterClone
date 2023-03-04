@@ -1,0 +1,12 @@
+@import '../../../../dist/scss/root.scss';
+
+section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.navbar {
+    border: 3px;
+    border-color: $font-secundary-color;
+}

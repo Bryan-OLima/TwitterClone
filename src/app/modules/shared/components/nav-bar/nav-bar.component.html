@@ -1,0 +1,20 @@
+<section>
+    <div class="logo">
+        <button>
+            <img src="../../../../../favicon.ico">
+        </button>
+    </div>
+
+    <nav *ngFor="let item of list">
+        <button class="nav-btn">
+            <span class="btn-content">
+                <fa-icon [icon]="item.icon"></fa-icon>
+                {{ item.name }}
+            </span>
+        </button>
+    </nav>
+    <app-tweet-button 
+        title="Tweetar"
+        (click)="generic()"
+    ></app-tweet-button>
+</section>
